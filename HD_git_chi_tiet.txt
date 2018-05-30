@@ -1,0 +1,154 @@
+b0: git status
+
+b1: git add .
+
+b2: git commit -m "noi dung muon cap nhat"
+
+b3: git push origin master
+
+cu the cac lenh sau:
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        HD_git_chi_tiet.txt
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git
+$ git clone git@github.com:phamhuuthang/18_php03.git
+Cloning into '18_php03'...
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 15 (delta 0), reused 15 (delta 0), pack-reused 0
+Receiving objects: 100% (15/15), done.
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git
+$ cd 18_php03/
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   session7/example1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        session7/css/
+        session7/example2.html
+        session7/example3.html
+        session7/img/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git add .
+warning: LF will be replaced by CRLF in session7/example1.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in session7/css/style1.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in session7/css/style2.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in session7/css/style3.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in session7/example2.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in session7/example3.html.
+The file will have its original line endings in your working directory.
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   session7/css/style1.css
+        new file:   session7/css/style2.css
+        new file:   session7/css/style3.css
+        new file:   session7/example2.html
+        new file:   session7/example3.html
+        new file:   session7/img/fa_vi_con_1.jpg
+        new file:   session7/img/fa_vi_con_2.png
+        new file:   session7/img/fa_vi_con_3.png
+
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git commit -m"update code session7"
+[master 59756aa] update code session7
+ 8 files changed, 668 insertions(+)
+ create mode 100644 session7/css/style1.css
+ create mode 100644 session7/css/style2.css
+ create mode 100644 session7/css/style3.css
+ create mode 100644 session7/example2.html
+ create mode 100644 session7/example3.html
+ create mode 100644 session7/img/fa_vi_con_1.jpg
+ create mode 100644 session7/img/fa_vi_con_2.png
+ create mode 100644 session7/img/fa_vi_con_3.png
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git push origin master
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 235.14 KiB | 1.00 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:phamhuuthang/18_php03.git
+   b5cef93..59756aa  master -> master
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git add .
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   session8/example1.html
+
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git commit "update example1 sssion8"
+error: pathspec 'update example1 sssion8' did not match any file(s) known to git.
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git commit -m "update example1 sssion8"
+[master 1788f44] update example1 sssion8
+ 1 file changed, 9 insertions(+)
+ create mode 100644 session8/example1.html
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 424 bytes | 141.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:phamhuuthang/18_php03.git
+   59756aa..1788f44  master -> master
+
+Administrator@PHT MINGW64 /d/phamhuuthang/git/18_php03 (master)
+
+
